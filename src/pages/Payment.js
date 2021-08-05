@@ -14,7 +14,8 @@ export default function Payment() {
 
   // Configuración Paypal
   const paypalOptions = {
-    clientId: process.env.PAYPAL_CLIENT_ID,
+    clientId:
+      'Ad7GLizRKSK5OCS-nOGH6u3DqSC3GPLygzmtQxs2d4eyeV6TwgWUki9F9xRFpz8rLQDiLOLeRxXlrqNU',
     intent: 'capture',
     currency: 'USD',
   };
