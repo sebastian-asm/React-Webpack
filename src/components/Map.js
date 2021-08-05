@@ -15,13 +15,13 @@ export default function Map({ mapLocation, address }) {
   return (
     mapLocation && (
       <MapContainer
-        center={[mapLocation.latitude, mapLocation.longitude]}
+        center={[mapLocation.lat, mapLocation.lon]}
         zoom={18}
         scrollWheelZoom={false}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <Marker
-          position={[mapLocation.latitude, mapLocation.longitude]}
+          position={[mapLocation.lat, mapLocation.lon]}
           icon={iconLocation}
         >
           <Popup>{address}</Popup>

@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 
 import Map from '../components/Map';
 import AppContext from '../context/AppContext';
-import useGoogleAddress from '../hooks/useGoogleAddress';
+import useMapAddress from '../hooks/useMapAddress';
 
 import '../styles/components/Success.scss';
 
 export default function Success() {
   const { state } = useContext(AppContext);
   const { buyer } = state;
-  const mapLocation = useGoogleAddress(buyer.address);
+  const mapLocation = useMapAddress(buyer.address);
 
   return (
     <div className="Success">
